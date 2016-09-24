@@ -46,7 +46,7 @@ describe('coverage', function () {
       '#',
       fis_linenum('#', {
         isText: function() { return false; },
-        origin: input,
+        origin: 'input',
         cache: {
           addDeps: function (filename) {
           }
