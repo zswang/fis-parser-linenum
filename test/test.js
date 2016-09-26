@@ -26,7 +26,7 @@ describe('fixtures', function () {
         text_output,
         fis_linenum(text_input, {
           isText: function() { return true; },
-          origin: input,
+          subpath: input,
           filename: path.basename(input),
           dirname: testdir,
           ext: path.basename(input),
@@ -46,7 +46,7 @@ describe('coverage', function () {
       '#',
       fis_linenum('#', {
         isText: function() { return false; },
-        origin: 'input',
+        subpath: 'input',
         cache: {
           addDeps: function (filename) {
           }

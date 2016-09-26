@@ -30,7 +30,7 @@ module.exports = function (content, file, conf) {
     return content;
   }
   return linenum.replace(content, {
-    prefix: url.format(file.origin) + ':',
+    prefix: url.format(file.subpath) + ':',
     pattern: conf.pattern
   });
 

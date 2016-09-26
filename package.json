@@ -1,9 +1,9 @@
 {
   "name": "fis-parser-linenum",
   "description": "A parser plugin for fis3 to replace line number.",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "homepage": "https://github.com/fex-team/fis-parser-linenum",
-  "main": "lib/fis-parser-linenum.js",
+  "main": "lib/linenum.js",
   "author": {
     "name": "zswang",
     "url": "http://weibo.com/zswang"
@@ -30,11 +30,11 @@
     "jdists": "2.0.0-alpha.2"
   },
   "files": [
-    "index.js",
     "lib"
   ],
   "scripts": {
     "test": "istanbul cover --hook-run-in-context node_modules/mocha/bin/_mocha -- -R spec",
+    "mocha": "mocha",
     "lint": "jshint src/*.js",
     "dist": "node version.js && jdists src/linenum.js -o lib/linenum.js && npm test"
   }
